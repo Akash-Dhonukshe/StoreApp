@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Store App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="store_app">Store App</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="login">login</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="dont_have_an_account">Dont have an Account?</string>
+    <string name="register">Register</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="i_agree_the_terms_and_conditions"><![CDATA[I agree the Terms & Conditions]]></string>
+    <string name="store">Store</string>
+</resources>

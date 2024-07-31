@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_red"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.LoginScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/firstGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintGuide_percent="0.05"
+            android:orientation="vertical"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/startGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.10"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/endGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.90"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/fourthGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintGuide_percent="0.95"
+            android:orientation="vertical"/>
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/store_app"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:textStyle="bold"
+            android:textSize="45sp"
+            android:layout_marginTop="200dp"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userName_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            android:layout_marginTop="49dp"
+            app:layout_constraintTop_toBottomOf="@id/title_tv"
+            app:hintTextColor="@color/color_white"
+            >
+
+            <EditText
+                android:id="@+id/username_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/userName_tv">
+
+            <EditText
+                android:id="@+id/password_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="@color/color_red"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            app:layout_constraintTop_toBottomOf="@id/password_tv"
+            android:layout_marginTop="26dp"/>
+
+        <TextView
+            android:id="@+id/forget_password_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:text="@string/forget_password"
+            android:textSize="18sp"
+            android:textColor="@color/color_white"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/login_btn"/>
+        
+        <TextView
+            android:id="@+id/dont_have_an_account_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/firstGuideline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/dont_have_an_account"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:layout_marginTop="80dp"
+            app:layout_constraintTop_toBottomOf="@+id/forget_password_tv"/>
+        
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:src="@drawable/baseline_add_24"
+            android:background="#9e0100"
+            app:layout_constraintBottom_toBottomOf="@id/dont_have_an_account_tv"
+            app:layout_constraintEnd_toEndOf="@id/fourthGuideline"
+            app:layout_constraintTop_toTopOf="@+id/dont_have_an_account_tv"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
