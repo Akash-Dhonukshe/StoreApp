@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.SlideOutScreen">
 
@@ -36,11 +37,57 @@
             tools:src="@tools:sample/avatars"/>
 
         <TextView
+            android:id="@+id/profile_userName_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="@id/profile_iv"
+            android:layout_marginTop="18dp"
+            android:text="@string/kinjal_jain"
+            android:fontFamily="@font/medium"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            app:layout_constraintTop_toBottomOf="@id/profile_iv"
             />
 
+        <TextView
+            android:id="@+id/profile_email_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/kinjal_jain_wwindia_com"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/profile_userName_tv"
+            android:fontFamily="@font/book"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            app:layout_constraintTop_toBottomOf="@id/profile_email_tv"
+            android:layout_marginTop="10dp"
+            android:outlineSpotShadowColor="@color/black"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/row_item_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@id/view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:listitem="@layout/slide_out_row_item"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <ImageView
+            android:id="@+id/cartItem_number_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            app:layout_constraintTop_toBottomOf="@id/view"
+            android:src="@drawable/two_24"
+            android:layout_marginTop="70dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

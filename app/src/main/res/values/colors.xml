@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
+    //red variants
+    <color name="red">#E91C1A</color>
+    <color name="red_light">#fe3f3f</color>
+    <color name="dark">#e91b1a</color>
+    <color name="brown_light">#bb0100</color>
+    <color name="brown">#9e0100</color>
+
+    //white and black variant
     <color name="white">#FFFFFFFF</color>
-    <color name="color_white">#FFFFFF</color>
-    <color name="color_red">#E91C1A</color>
+    <color name="light_grey">#ededed</color>
+    <color name="grey">#bfbfbf</color>
+    <color name="mid_grey">#8e8e8e</color>
+    <color name="mid_dark_grey">#8e8e8e</color>
+    <color name="dark_grey">#282727</color>
+    <color name="light_black">#333333</color>
+    <color name="charcoal_black">#2c2b2b</color>
+    <color name="jet_black">#111111</color>
+    <color name="black">#FF000000</color>
+
 </resources>

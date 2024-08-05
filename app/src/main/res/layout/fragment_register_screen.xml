@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_red"
+    android:background="@color/red"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.RegisterScreen">
 
@@ -45,7 +45,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:text="@string/register"
-            android:textColor="@color/color_white"
+            android:textColor="@color/white"
+            android:fontFamily="@font/medium"
             app:layout_constraintEnd_toEndOf="@id/endGuideline"
             app:layout_constraintStart_toStartOf="@id/startGuideline"
             app:layout_constraintTop_toTopOf="parent" />
@@ -57,9 +58,9 @@
             android:layout_marginTop="50dp"
             android:text="@string/store_app"
             android:textAllCaps="true"
-            android:textColor="@color/color_white"
+            android:textColor="@color/white"
             android:textSize="45sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/bold"
             app:layout_constraintEnd_toEndOf="@id/endGuideline"
             app:layout_constraintStart_toStartOf="@id/startGuideline"
             app:layout_constraintTop_toBottomOf="@+id/register_tv" />
@@ -69,16 +70,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="49dp"
-            app:hintTextColor="@color/color_white"
+            app:hintTextColor="@color/white"
             app:layout_constraintEnd_toEndOf="@id/endGuideline"
             app:layout_constraintStart_toStartOf="@id/startGuideline"
-            app:layout_constraintTop_toBottomOf="@id/title_tv">
+            app:layout_constraintTop_toBottomOf="@id/title_tv"
+            style="@style/TextInputLayout">
 
             <EditText
+                android:drawableStart="@drawable/baseline_person_24"
                 android:id="@+id/first_name_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/first_name"
+                android:fontFamily="@font/medium"
                 android:imeOptions="actionNext"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
@@ -91,16 +95,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
-            app:hintTextColor="@color/color_white"
+            app:hintTextColor="@color/white"
             app:layout_constraintEnd_toEndOf="@id/endGuideline"
             app:layout_constraintStart_toStartOf="@id/startGuideline"
-            app:layout_constraintTop_toBottomOf="@id/first_name_tv">
+            app:layout_constraintTop_toBottomOf="@id/first_name_tv"
+            style="@style/TextInputLayout">
 
             <EditText
+                android:drawableStart="@drawable/baseline_person_24"
                 android:id="@+id/last_name_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/last_name"
+                android:fontFamily="@font/medium"
                 android:imeOptions="actionNext"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
@@ -113,16 +120,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
-            app:hintTextColor="@color/color_white"
+            app:hintTextColor="@color/white"
             app:layout_constraintEnd_toEndOf="@id/endGuideline"
             app:layout_constraintStart_toStartOf="@id/startGuideline"
-            app:layout_constraintTop_toBottomOf="@id/last_name_tv">
+            app:layout_constraintTop_toBottomOf="@id/last_name_tv"
+            style="@style/TextInputLayout">
 
             <EditText
+                android:drawableStart="@drawable/baseline_email_24"
                 android:id="@+id/email_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email"
+                android:fontFamily="@font/medium"
                 android:imeOptions="actionNext"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
@@ -135,18 +145,21 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
-            app:hintTextColor="@color/color_white"
+            app:hintTextColor="@color/white"
             app:layout_constraintEnd_toEndOf="@id/endGuideline"
             app:layout_constraintStart_toStartOf="@id/startGuideline"
-            app:layout_constraintTop_toBottomOf="@id/email_tv">
+            app:layout_constraintTop_toBottomOf="@id/email_tv"
+            style="@style/TextInputLayout">
 
             <EditText
+                android:drawableStart="@drawable/baseline_lock_24"
                 android:id="@+id/password_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
                 android:imeOptions="actionNext"
                 android:inputType="textPassword"
+                android:fontFamily="@font/medium"
                 android:maxLines="1"
                 android:singleLine="true"
                 tools:ignore="LabelFor" />
@@ -158,16 +171,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
-            app:hintTextColor="@color/color_white"
+            app:hintTextColor="@color/white"
             app:layout_constraintEnd_toEndOf="@id/endGuideline"
             app:layout_constraintStart_toStartOf="@id/startGuideline"
-            app:layout_constraintTop_toBottomOf="@id/password_tv">
+            app:layout_constraintTop_toBottomOf="@id/password_tv"
+            style="@style/TextInputLayout">
 
             <EditText
+                android:drawableStart="@drawable/baseline_lock_24"
                 android:id="@+id/confirm_password_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/confirm_password"
+                android:fontFamily="@font/medium"
                 android:imeOptions="actionNext"
                 android:inputType="textPassword"
                 android:maxLines="1"
@@ -181,17 +197,20 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
-            app:hintTextColor="@color/color_white"
+            app:hintTextColor="@color/white"
             app:layout_constraintEnd_toEndOf="@id/endGuideline"
             app:layout_constraintStart_toStartOf="@id/startGuideline"
-            app:layout_constraintTop_toBottomOf="@id/confirm_password_tv">
+            app:layout_constraintTop_toBottomOf="@id/confirm_password_tv"
+            style="@style/TextInputLayout">
 
             <EditText
+                android:drawableStart="@drawable/baseline_phone_android_24"
                 android:id="@+id/phone_number_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColorHint="@color/color_white"
+                android:textColorHint="@color/white"
                 android:hint="@string/phone_number"
+                android:fontFamily="@font/medium"
                 android:imeOptions="actionNext"
                 android:inputType="phone"
                 android:maxLines="1"
@@ -214,13 +233,15 @@
                 android:id="@+id/radio_male"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/male" />
+                android:text="@string/male"
+                android:fontFamily="@font/medium"/>
 
             <RadioButton
                 android:id="@+id/radio_female"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/female" />
+                android:text="@string/female"
+                android:fontFamily="@font/medium"/>
         </RadioGroup>
 
         <CheckBox
@@ -229,6 +250,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
             android:text="@string/i_agree_the_terms_and_conditions"
+            android:fontFamily="@font/medium"
             app:layout_constraintEnd_toEndOf="@id/endGuideline"
             app:layout_constraintStart_toStartOf="@id/startGuideline"
             app:layout_constraintTop_toBottomOf="@id/radio_gender_group" />
@@ -239,6 +261,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
             android:text="@string/register"
+            android:fontFamily="@font/medium"
             android:textAllCaps="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/endGuideline"

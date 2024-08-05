@@ -2,12 +2,16 @@
     <string name="app_name">Store App</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //Login Page
     <string name="store_app">Store App</string>
     <string name="username">User Name</string>
     <string name="password">Password</string>
     <string name="login">login</string>
     <string name="forget_password">Forget Password?</string>
     <string name="dont_have_an_account">Dont have an Account?</string>
+
+    //Register Page
     <string name="register">Register</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
@@ -18,4 +22,16 @@
     <string name="female">Female</string>
     <string name="i_agree_the_terms_and_conditions"><![CDATA[I agree the Terms & Conditions]]></string>
     <string name="store">Store</string>
+
+
+    //Slide out screen
+    <string name="kinjal_jain">Kinjal Jain</string>
+    <string name="kinjal_jain_wwindia_com">kinjal.jain@wwindia.com</string>
+    <string name="tables">Tables</string>
+    <string name="_6_seater_dining_table_for_family">6 Seater Dining Table for Family</string>
+    <string name="category_tables">Category - Tables</string>
+    <string name="future_furniture_center">Future Furniture Center</string>
+    <string name="_6_seater_dinning_table">6 Seater Dinning Table</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="my_cart">My Cart</string>
 </resources>

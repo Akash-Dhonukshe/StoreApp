@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.OrderIdScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/startGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/endGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95"/>
+
+        <include
+            android:id="@+id/order_id_title"
+            layout="@layout/order_id_title_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/order_id_rv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            app:layout_constraintTop_toBottomOf="@id/order_id_title"
+            tools:listitem="@layout/order_id_product_item_layout"
+            tools:itemCount="5"/>
+
+        <TextView
+            android:id="@+id/total_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:text="TOTAL"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/medium"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/order_id_rv"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"/>
+
+        <TextView
+            android:id="@+id/price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:text="RS 180.00"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/medium"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/order_id_rv"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

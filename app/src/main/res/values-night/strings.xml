@@ -15,4 +15,13 @@
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="store">Store</string>
+    <string name="kinjal_jain">Kinjal Jain</string>
+    <string name="kinjal_jain_wwindia_com">kinjal.jain@wwindia.com</string>
+    <string name="tables">Tables</string>
+    <string name="_6_seater_dining_table_for_family">6 Seater Dining Table for Family</string>
+    <string name="category_tables">Category - Tables</string>
+    <string name="future_furniture_center">Future Furniture Center</string>
+    <string name="_6_seater_dinning_table">6 Seater Dinning Table</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="my_cart">My Cart</string>
 </resources>

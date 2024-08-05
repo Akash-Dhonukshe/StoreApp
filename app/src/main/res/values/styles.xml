@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/text_input_outline_color</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxCornerRadiusBottomEnd">0dp</item>
+        <item name="boxCornerRadiusTopStart">0dp</item>
+        <item name="boxCornerRadiusTopEnd">0dp</item>
+        <item name="boxCornerRadiusBottomStart">0dp</item>
+        <item name="boxStrokeErrorColor">@color/white</item>
+        <item name="errorIconTint">@color/white</item>
+        <item name="errorTextColor">@color/white</item>
+    </style>
+
+    <style name="AddressTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/text_input_outline_color</item>
+        <item name="boxStrokeWidth">0px</item>
+        <item name="boxCornerRadiusBottomEnd">0px</item>
+        <item name="boxCornerRadiusTopStart">0px</item>
+        <item name="boxCornerRadiusTopEnd">0px</item>
+        <item name="errorIconTint">@color/red</item>
+        <item name="boxCornerRadiusBottomStart">0px</item>
+        <item name="boxStrokeErrorColor">@color/white</item>
+        <item name="errorTextColor">@color/red</item>
+        <item name="hintEnabled">false</item>
+    </style>
+</resources>

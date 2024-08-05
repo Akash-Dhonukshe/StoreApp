@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.AddAddressScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_grey">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/startGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/midGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.50"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/endGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95"/>
+
+        <include
+            android:id="@+id/add_address_title"
+            layout="@layout/add_address_title_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"/>
+
+        <TextView
+            android:id="@+id/address_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ADDRESS"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/add_address_title"
+            android:textColor="@color/black"
+            android:fontFamily="@font/medium"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/address_tv_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="49dp"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@id/add_address_title"
+            android:background="@color/white"
+            style="@style/AddressTextInputLayoutStyle">
+
+            <EditText
+                android:id="@+id/address_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:minLines="1"
+                android:maxLines="20"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/city_title_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CITY"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/address_tv_layout"
+            android:textColor="@color/black"
+            android:fontFamily="@font/medium"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/city_tv_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@id/city_title_tv"
+            android:background="@color/white"
+            style="@style/AddressTextInputLayoutStyle">
+
+            <EditText
+                android:id="@+id/city_et_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:minLines="1"
+                android:maxLines="20"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/city_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CITY"
+            android:fontFamily="@font/medium"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/city_tv_layout"/>
+
+        <EditText
+            android:id="@+id/city_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/AddressTextInputLayoutStyle"
+            android:background="@color/white"
+            android:hint="MUMBAI"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/city_tv"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"/>
+
+        <TextView
+            android:id="@+id/state_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="STATE"
+            android:fontFamily="@font/medium"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@id/midGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/city_tv_layout"/>
+
+        <EditText
+            android:id="@+id/state_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/AddressTextInputLayoutStyle"
+            android:background="@color/white"
+            android:hint="MAHARASHTRA"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/state_tv"
+            app:layout_constraintStart_toStartOf="@id/midGuideline"/>
+
+        <TextView
+            android:id="@+id/zip_code_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ZIP CODE"
+            android:fontFamily="@font/medium"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/city_et"/>
+
+        <EditText
+            android:id="@+id/zip_code_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/AddressTextInputLayoutStyle"
+            android:background="@color/white"
+            android:hint="10066"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/zip_code_tv"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"/>
+
+        <TextView
+            android:id="@+id/country_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="COUNTRY"
+            android:fontFamily="@font/medium"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@id/midGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/state_et"/>
+
+        <EditText
+            android:id="@+id/country_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/AddressTextInputLayoutStyle"
+            android:background="@color/white"
+            android:hint="INDIA"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/country_tv"
+            app:layout_constraintStart_toStartOf="@id/midGuideline"/>
+
+        <Button
+            android:id="@+id/save_address_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="SAVE ADDRESS"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bold"
+            android:layout_marginTop="25dp"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/country_et"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
