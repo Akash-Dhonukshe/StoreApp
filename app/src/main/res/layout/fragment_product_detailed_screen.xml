@@ -36,8 +36,8 @@
             layout="@layout/product_detail_title_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="@id/startGuideline"
-            app:layout_constraintEnd_toEndOf="@id/endGuideline"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <include
             android:id="@+id/product_detail_item"

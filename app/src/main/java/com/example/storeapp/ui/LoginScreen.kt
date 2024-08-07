@@ -6,15 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.storeapp.R
+import com.example.storeapp.base.BaseFragment
+import com.example.storeapp.databinding.FragmentLoginScreenBinding
 
-class LoginScreen : Fragment() {
+class LoginScreen : BaseFragment<FragmentLoginScreenBinding>() {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_login_screen, container, false)
-    }
+    override fun getFragmentBinding(
+        inflater: LayoutInflater,
+        container: ViewGroup?
+    ) = FragmentLoginScreenBinding.inflate(inflater, container, false)
 
 }
+
+

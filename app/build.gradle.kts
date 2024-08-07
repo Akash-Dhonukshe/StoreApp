@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -71,10 +73,11 @@ dependencies {
     implementation ("androidx.paging:paging-common-ktx:3.1.1")
     //Glide
     implementation ("com.github.bumptech.glide:glide:4.12.0")
+    //Hilt DI
+    implementation("com.google.dagger:hilt-android:2.48")
+    kapt("com.google.dagger:hilt-android-compiler:2.48")
     //kapt ("com.github.bumptech.glide:compiler:4.12.0")
 }
-// Allow references to generated code
-
-//kapt {
-//    correctErrorTypes = true
-//}
+kapt {
+    correctErrorTypes = true
+}

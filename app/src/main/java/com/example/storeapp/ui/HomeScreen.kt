@@ -6,15 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.storeapp.R
+import com.example.storeapp.base.BaseFragment
+import com.example.storeapp.databinding.FragmentHomeScreenBinding
 
-class HomeScreen : Fragment() {
+class HomeScreen : BaseFragment<FragmentHomeScreenBinding>() {
+    override fun getFragmentBinding(
+        inflater: LayoutInflater,
+        container: ViewGroup?
+    ) = FragmentHomeScreenBinding.inflate(inflater, container, false)
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_screen, container, false)
-    }
 
 }

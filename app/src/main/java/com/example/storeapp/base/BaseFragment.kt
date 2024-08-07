@@ -24,6 +24,26 @@ abstract class BaseFragment<viewBinding: ViewBinding>: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        initialSetUp()
+        apiCall()
+        setUpObserver()
+        setUpOnClickListener()
+    }
+
+    open fun initialSetUp(){
+
+    }
+
+    open fun apiCall(){
+
+    }
+
+    open fun setUpObserver(){
+
+    }
+
+    open fun setUpOnClickListener(){
+
     }
 
     override fun onDestroyView() {
