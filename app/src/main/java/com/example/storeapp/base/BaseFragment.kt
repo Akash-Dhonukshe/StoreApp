@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
 
 abstract class BaseFragment<viewBinding: ViewBinding>: Fragment() {
-    private var _binding : ViewBinding? = null
+    private var _binding : viewBinding? = null
     protected val binding get() = _binding!!
 
     override fun onCreateView(

@@ -1,4 +1,4 @@
-package com.example.storeapp.ui
+package com.example.storeapp.presentation.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

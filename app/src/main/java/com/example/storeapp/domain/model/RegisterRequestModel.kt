@@ -12,7 +12,7 @@ data class RegisterRequestModel(
     @SerializedName("confirm_password")
     val confirmPassword : String,
     val gender : String,
-    @SerializedName("phone_number")
+    @SerializedName("phone_no")
     val phoneNumber : Int
 
 )

@@ -1,4 +1,4 @@
-package com.example.storeapp.ui
+package com.example.storeapp.presentation.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,14 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.storeapp.R
 
-class EditProfileScreen : Fragment() {
+class RatingPopUpScreen : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_edit_profile_screen, container, false)
+        return inflater.inflate(R.layout.fragment_rating_pop_up_screen, container, false)
     }
+
 
 }

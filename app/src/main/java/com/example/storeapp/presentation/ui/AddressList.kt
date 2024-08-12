@@ -1,4 +1,4 @@
-package com.example.storeapp.ui
+package com.example.storeapp.presentation.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,14 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.storeapp.R
 
-class ProductDetailedScreen : Fragment() {
+class AddressList : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_product_detailed_screen, container, false)
+        return inflater.inflate(R.layout.fragment_address_list, container, false)
     }
+
 
 }

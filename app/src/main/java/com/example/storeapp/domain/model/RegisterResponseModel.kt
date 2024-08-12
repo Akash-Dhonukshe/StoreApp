@@ -3,7 +3,7 @@ package com.example.storeapp.domain.model
 import com.google.gson.annotations.SerializedName
 
 data class RegisterResponseModel(
-    val status: Boolean,
+    val status: Int,
     @SerializedName("data")
     val data: RegisterData,
     val message: String,
