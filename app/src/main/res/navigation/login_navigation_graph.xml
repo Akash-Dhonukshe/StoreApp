@@ -25,10 +25,22 @@
         <action
             android:id="@+id/action_registerScreen_to_loginScreen"
             app:destination="@id/loginScreen" />
+        <action
+            android:id="@+id/action_registerScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
     </fragment>
     <fragment
         android:id="@+id/homeScreen"
         android:name="com.example.storeapp.presentation.ui.HomeScreen"
         android:label="fragment_home_screen"
-        tools:layout="@layout/fragment_home_screen" />
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreen_to_productListingScreen"
+            app:destination="@id/productListingScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/productListingScreen"
+        android:name="com.example.storeapp.presentation.ui.ProductListingScreen"
+        android:label="fragment_product_listing_screen"
+        tools:layout="@layout/fragment_product_listing_screen" />
 </navigation>

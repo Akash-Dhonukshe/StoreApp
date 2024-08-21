@@ -24,7 +24,7 @@ data class RegisterData(
     val username: String,
     val gender: String,
     @SerializedName("phone_no")
-    val phoneNo: Int,
+    val phoneNo: Long,
     @SerializedName("is_active")
     val isActive: Boolean,
     val created: String,

@@ -48,5 +48,16 @@
         app:layout_constraintStart_toEndOf="@id/product_iv"
         app:layout_constraintTop_toBottomOf="@id/product_store_tv"/>
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/product_price_tv"
+        android:background="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -34,4 +34,8 @@
     <string name="_6_seater_dinning_table">6 Seater Dinning Table</string>
     <string name="description">DESCRIPTION</string>
     <string name="my_cart">My Cart</string>
+    <string name="logout">Logout</string>
+    <string name="my_orders">My Orders</string>
+    <string name="store_locator">Store Locator</string>
+    <string name="my_account">My Account</string>
 </resources>

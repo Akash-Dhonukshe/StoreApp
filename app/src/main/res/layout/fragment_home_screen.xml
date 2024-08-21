@@ -18,6 +18,13 @@
             app:layout_constraintGuide_percent="0.05"/>
 
         <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/midGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <androidx.constraintlayout.widget.Guideline
             android:id="@+id/endGuideline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,20 +44,54 @@
             android:id="@+id/view_pager"
             android:layout_width="wrap_content"
             android:layout_height="228dp"
+            android:layout_margin="15dp"
             app:layout_constraintTop_toBottomOf="@+id/title_heading_layout"
             app:layout_constraintStart_toStartOf="@id/startGuideline"
             app:layout_constraintEnd_toEndOf="@id/endGuideline"/>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <include
+            android:id="@+id/item_table"
+            layout="@layout/homescreen_product_item"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
             app:layout_constraintTop_toBottomOf="@id/view_pager"
             app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintEnd_toEndOf="@id/midGuideline"
+            />
+
+        <include
+            android:id="@+id/item_chair"
+            layout="@layout/homescreen_product_item"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@id/view_pager"
+            app:layout_constraintStart_toStartOf="@id/midGuideline"
             app:layout_constraintEnd_toEndOf="@id/endGuideline"
-            app:layout_constraintBottom_toBottomOf="parent"
-            tools:listitem="@layout/homescreen_product_item"
-            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            app:spanCount="2"/>
+            />
+
+        <include
+            android:id="@+id/item_sofa"
+            layout="@layout/homescreen_product_item"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@id/item_table"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintEnd_toEndOf="@id/midGuideline"
+            />
+
+        <include
+            android:id="@+id/item_cupboard"
+            layout="@layout/homescreen_product_item"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@id/item_chair"
+            app:layout_constraintStart_toStartOf="@id/midGuideline"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

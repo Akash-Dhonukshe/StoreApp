@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     //red variants
+    <color name="background">#00BCD4</color>
     <color name="red">#E91C1A</color>
     <color name="red_light">#fe3f3f</color>
     <color name="dark">#e91b1a</color>

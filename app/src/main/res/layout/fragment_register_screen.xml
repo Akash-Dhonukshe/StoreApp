@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/red"
+    android:background="#00BCD4"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".presentation.ui.RegisterScreenFragment">
 
@@ -149,6 +149,7 @@
             app:layout_constraintEnd_toEndOf="@id/endGuideline"
             app:layout_constraintStart_toStartOf="@id/startGuideline"
             app:layout_constraintTop_toBottomOf="@id/email_tv"
+            app:endIconMode="password_toggle"
             style="@style/TextInputLayout">
 
             <EditText
@@ -175,6 +176,7 @@
             app:layout_constraintEnd_toEndOf="@id/endGuideline"
             app:layout_constraintStart_toStartOf="@id/startGuideline"
             app:layout_constraintTop_toBottomOf="@id/password_tv"
+            app:endIconMode="password_toggle"
             style="@style/TextInputLayout">
 
             <EditText
@@ -255,6 +257,18 @@
             app:layout_constraintStart_toStartOf="@id/startGuideline"
             app:layout_constraintTop_toBottomOf="@id/radio_gender_group" />
 
+        <TextView
+            android:id="@+id/errorText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@id/checkbox"/>
+
+
         <Button
             android:id="@+id/register_btn"
             android:layout_width="0dp"
@@ -267,7 +281,16 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/endGuideline"
             app:layout_constraintStart_toStartOf="@id/startGuideline"
-            app:layout_constraintTop_toBottomOf="@+id/checkbox" />
+            app:layout_constraintTop_toBottomOf="@+id/errorText" />
+
+        <include
+            android:id="@+id/loadingScreen"
+            layout="@layout/loading_screen"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
